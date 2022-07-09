@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .test {
   background-color: var(--background);
 }
@@ -5,3 +9,35 @@
 .test h1 {
   color: var(--foreground);
 }
+
+.phone {
+  max-height: 90vh;
+  width: auto;
+}
+
+
+/* NAVBAR CSS */
+.navbar {
+  position: sticky;
+  height: 5vh;
+  background: var(--background);
+  padding: 0px;
+  backdrop-filter: blur(10px);
+}
+
+#navbarbrand {
+  width: 125px;
+  min-height: 60px;
+}
+#homelogo {
+  width: 125px;
+  min-height: 60px;
+  cursor: pointer;
+  background-image: url('../public/finallogo.svg');
+  background-size: cover;
+  transition: transform .3s ease-in-out;
+}
+#homelogo:hover {
+    transform: rotate(360deg);
+}
+
